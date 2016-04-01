@@ -44,8 +44,8 @@ IM的这套业务逻辑，加上ui的实现，精细起来其实是一件不容�
   
 ### 效果图
    
-  ![](http://7xrwki.com1.z0.glb.clouddn.com/gif1.gif)
-  ![](hhttp://7xrwki.com1.z0.glb.clouddn.com/gif2.gif)
+  ![](http://7xrwki.com1.z0.glb.clouddn.com/gifSmall1.gif)
+  ![](http://7xrwki.com1.z0.glb.clouddn.com/gifSmall2.gif)
 
    ![](http://7xrwki.com1.z0.glb.clouddn.com/Simulator%20Screen%20Shot%202016%E5%B9%B43%E6%9C%8831%E6%97%A5%20%E4%B8%8B%E5%8D%889.17.11.png)
    ![](http://7xrwki.com1.z0.glb.clouddn.com/Simulator%20Screen%20Shot%202016%E5%B9%B43%E6%9C%8831%E6%97%A5%20%E4%B8%8B%E5%8D%889.17.25.png)
