@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/Pods/Target\ Support\ Files/Pods/Pods-dummy.m
+  /Users/yuqiang/Desktop/Chat/ChatKit/Pods/Target\ Support\ Files/Pods/Pods-dummy.m

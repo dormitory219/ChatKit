@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/KeyBoardView/Category/UIView+FrameLayout.m \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/KeyBoardView/Category/UIView+FrameLayout.h
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/KeyBoardView/Category/UIView+FrameLayout.m \
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/KeyBoardView/Category/UIView+FrameLayout.h

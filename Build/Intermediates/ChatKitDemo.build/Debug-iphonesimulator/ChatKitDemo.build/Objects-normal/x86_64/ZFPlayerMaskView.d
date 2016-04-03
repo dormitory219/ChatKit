@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/ChatView/Vendor/PlayerView/ZFPlayerMaskView.m \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/ChatView/Vendor/PlayerView/ZFPlayerMaskView.h
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/ChatView/Vendor/PlayerView/ZFPlayerMaskView.m \
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/ChatView/Vendor/PlayerView/ZFPlayerMaskView.h

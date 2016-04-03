@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/KeyBoardView/View/BottomView/KeyBoardBottomActivityView.m \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/KeyBoardView/View/BottomView/KeyBoardBottomActivityView.h
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/KeyBoardView/View/BottomView/KeyBoardBottomActivityView.m \
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/KeyBoardView/View/BottomView/KeyBoardBottomActivityView.h

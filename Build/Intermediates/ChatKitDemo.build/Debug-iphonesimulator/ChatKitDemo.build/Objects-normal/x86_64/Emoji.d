@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/KeyBoardView/Emoji/Emoji.m \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/KeyBoardView/Emoji/Emoji.h \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/KeyBoardView/Emoji/EmojiEmoticons.h
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/KeyBoardView/Emoji/Emoji.m \
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/KeyBoardView/Emoji/Emoji.h \
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/KeyBoardView/Emoji/EmojiEmoticons.h

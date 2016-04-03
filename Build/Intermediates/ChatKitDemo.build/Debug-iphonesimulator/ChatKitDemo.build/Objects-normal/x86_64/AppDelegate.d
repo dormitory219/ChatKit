@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/AppDelegate.m \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/AppDelegate.h
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/AppDelegate.m \
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/AppDelegate.h

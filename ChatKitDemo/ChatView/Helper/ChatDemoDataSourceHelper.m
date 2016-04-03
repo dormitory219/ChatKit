@@ -16,10 +16,10 @@
 + (MessageModel *)getTextMessage:(BOOL)isSender
 {
     NSArray *textArray  = @[
-                            @"你好,我是余强,一位来自上海的ios开发者,这个工程致力于完成一个优雅的IM实现方案:https://github.com/dormitory219/qyuTanMuDemo,如果对这个工程有什么疑问,可以加入我的qq群：289067005 进行技术讨论，或者在我的简书上留言http://www.jianshu.com/notebooks/2376189/latest。",
+                            @"你好,我是余强,一位来自上海的ios开发者,这个工程致力于完成一个优雅的IM实现方案:https://github.com/dormitory219/ChatKit,如果对这个工程有什么疑问,可以加入我的qq群：533793277 进行技术讨论，或者在我的简书上留言http://www.jianshu.com/p/f4a402f65de9。",
                             @"你好,我是余强,一位来自上海的ios开发者,这个工程致力于完成一个优雅的IM实现方案。",
                             @"你好,我是余强，一位来自上海的ios开发者。",
-                            @"你好,我是余强,一位来自上海的ios开发者,这个工程致力于完成一个优雅的IM实现方案:https://github.com/dormitory219/qyuTanMuDemo,如果对这个工程有什么疑问,可以加入我的qq群289067005 进行技术讨论。"
+                            @"你好,我是余强,一位来自上海的ios开发者,这个工程致力于完成一个优雅的IM实现方案:https://github.com/dormitory219/ChatKit,如果对这个工程有什么疑问,可以加入我的qq群533793277 进行技术讨论。"
                             
                             ];
     MessageModel *textMessage = [TextMessageModel text:textArray[arc4random_uniform(4)]  username:@"qyu" timeStamp:[NSDate date:[NSDate date] WithFormate:KDateFormate] isSender:isSender];

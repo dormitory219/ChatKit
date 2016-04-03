@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/ChatView/Vendor/MLEmoijLabel/MLEmojiLabel.m \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/ChatView/Vendor/MLEmoijLabel/MLEmojiLabel.h
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/ChatView/Vendor/MLEmoijLabel/MLEmojiLabel.m \
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/ChatView/Vendor/MLEmoijLabel/MLEmojiLabel.h

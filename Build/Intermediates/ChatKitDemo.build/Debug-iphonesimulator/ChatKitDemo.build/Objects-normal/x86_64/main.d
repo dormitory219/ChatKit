@@ -1,2 +1,2 @@
-dependencies: /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/main.m \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/AppDelegate.h
+dependencies: /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/main.m \
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/AppDelegate.h

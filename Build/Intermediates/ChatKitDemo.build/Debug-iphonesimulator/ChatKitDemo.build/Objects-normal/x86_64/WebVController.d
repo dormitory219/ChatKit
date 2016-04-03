@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/ChatView/ViewController/WebVController.m \
-  /Users/yuqiang/Desktop/DEMO/ChatKitDemo/ChatKitDemo/ChatView/ViewController/WebVController.h
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/ChatView/ViewController/WebVController.m \
+  /Users/yuqiang/Desktop/Chat/ChatKit/ChatKitDemo/ChatView/ViewController/WebVController.h
