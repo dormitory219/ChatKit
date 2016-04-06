@@ -84,7 +84,6 @@
 		45B6B8D71CAD367A00882E79 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B85E1CAD367A00882E79 /* ChatViewController.m */; };
 		45B6B8D81CAD367A00882E79 /* MapLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8601CAD367A00882E79 /* MapLocationController.m */; };
 		45B6B8D91CAD367A00882E79 /* VideoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8621CAD367A00882E79 /* VideoPlayController.m */; };
-		45B6B8DA1CAD367A00882E79 /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8641CAD367A00882E79 /* WebController.m */; };
 		45B6B8DB1CAD367A00882E79 /* WebVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8661CAD367A00882E79 /* WebVController.m */; };
 		45B6B8DC1CAD367A00882E79 /* NSBundle+KeyBoardExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B86A1CAD367A00882E79 /* NSBundle+KeyBoardExtension.m */; };
 		45B6B8DD1CAD367A00882E79 /* UIView+FrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B86C1CAD367A00882E79 /* UIView+FrameLayout.m */; };
@@ -272,8 +271,6 @@
 		45B6B8601CAD367A00882E79 /* MapLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationController.m; sourceTree = "<group>"; };
 		45B6B8611CAD367A00882E79 /* VideoPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayController.h; sourceTree = "<group>"; };
 		45B6B8621CAD367A00882E79 /* VideoPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayController.m; sourceTree = "<group>"; };
-		45B6B8631CAD367A00882E79 /* WebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebController.h; sourceTree = "<group>"; };
-		45B6B8641CAD367A00882E79 /* WebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebController.m; sourceTree = "<group>"; };
 		45B6B8651CAD367A00882E79 /* WebVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebVController.h; sourceTree = "<group>"; };
 		45B6B8661CAD367A00882E79 /* WebVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebVController.m; sourceTree = "<group>"; };
 		45B6B8691CAD367A00882E79 /* NSBundle+KeyBoardExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KeyBoardExtension.h"; sourceTree = "<group>"; };
@@ -698,8 +695,6 @@
 				45B6B8601CAD367A00882E79 /* MapLocationController.m */,
 				45B6B8611CAD367A00882E79 /* VideoPlayController.h */,
 				45B6B8621CAD367A00882E79 /* VideoPlayController.m */,
-				45B6B8631CAD367A00882E79 /* WebController.h */,
-				45B6B8641CAD367A00882E79 /* WebController.m */,
 				45B6B8651CAD367A00882E79 /* WebVController.h */,
 				45B6B8661CAD367A00882E79 /* WebVController.m */,
 			);
@@ -1076,7 +1071,6 @@
 				45B6B8E21CAD367A00882E79 /* BottomEmotionFaceView.m in Sources */,
 				45B6B89C1CAD367A00882E79 /* BubblePressHandleHelper.m in Sources */,
 				45B6B8B51CAD367A00882E79 /* FLAnimatedImageView.m in Sources */,
-				45B6B8DA1CAD367A00882E79 /* WebController.m in Sources */,
 				45B6B8DC1CAD367A00882E79 /* NSBundle+KeyBoardExtension.m in Sources */,
 				45B6B8C21CAD367A00882E79 /* TADotView.m in Sources */,
 				45B6B8D81CAD367A00882E79 /* MapLocationController.m in Sources */,

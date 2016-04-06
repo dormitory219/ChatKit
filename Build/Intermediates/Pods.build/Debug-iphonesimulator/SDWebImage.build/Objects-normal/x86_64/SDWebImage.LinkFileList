@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /Users/yuqiang/Desktop/Chat/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/NSData+ImageContentType.o
 /Users/yuqiang/Desktop/Chat/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/SDImageCache.o
 /Users/yuqiang/Desktop/Chat/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/SDWebImage-dummy.o
@@ -14,20 +13,3 @@
 /Users/yuqiang/Desktop/Chat/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/UIImageView+HighlightedWebCache.o
 /Users/yuqiang/Desktop/Chat/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/UIImageView+WebCache.o
 /Users/yuqiang/Desktop/Chat/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/UIView+WebCacheOperation.o
-=======
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/NSData+ImageContentType.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/SDImageCache.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/SDWebImage-dummy.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/SDWebImageCompat.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/SDWebImageDecoder.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/SDWebImageDownloader.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/SDWebImageDownloaderOperation.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/SDWebImageManager.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/SDWebImagePrefetcher.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/UIButton+WebCache.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/UIImage+GIF.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/UIImage+MultiFormat.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/UIImageView+HighlightedWebCache.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/UIImageView+WebCache.o
-/Users/yuqiang/Desktop/ChatKit/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/Objects-normal/x86_64/UIView+WebCacheOperation.o
->>>>>>> 7c8dcff43a380822f90a65330a04b620b47d704a
