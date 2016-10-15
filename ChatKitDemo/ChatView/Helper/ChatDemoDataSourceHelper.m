@@ -3,7 +3,7 @@
 //  KeyBoardView
 //
 //  Created by 余强 on 16/3/21.
-//  Copyright © 2016年 你好，我是余强，一位来自上海的ios开发者，现就职于bdcluster(上海大数聚科技有限公司)。这个工程致力于完成一个优雅的IM实现方案，如果您有兴趣，请来到项目交流群：533793277. All rights reserved.
+//  Copyright © 2016年 你好，我是余强，一位来自上海的ios开发者，现就职于bdcluster(上海大数聚科技有限公司)。这个工程致力于完成一个优雅的IM实现方案. All rights reserved.
 //
 
 #import "ChatDemoDataSourceHelper.h"
@@ -16,10 +16,10 @@
 + (MessageModel *)getTextMessage:(BOOL)isSender
 {
     NSArray *textArray  = @[
-                            @"你好,我是余强,一位来自上海的ios开发者,这个工程致力于完成一个优雅的IM实现方案:https://github.com/dormitory219/ChatKit,如果对这个工程有什么疑问,可以加入我的qq群：533793277 进行技术讨论，或者在我的简书上留言http://www.jianshu.com/p/f4a402f65de9。",
-                            @"你好,我是余强,一位来自上海的ios开发者,这个工程致力于完成一个优雅的IM实现方案。",
-                            @"你好,我是余强，一位来自上海的ios开发者。",
-                            @"你好,我是余强,一位来自上海的ios开发者,这个工程致力于完成一个优雅的IM实现方案:https://github.com/dormitory219/ChatKit,如果对这个工程有什么疑问,可以加入我的qq群533793277 进行技术讨论。"
+                            @"hello,i am joy,,这个工程致力于完成一个优雅的IM实现方案:https://github.com/dormitory219/ChatKit",
+                            @"这是聊天界面,这个工程致力于完成一个优雅的IM实现方案。",
+                            @"这是聊天界面",
+                            @"这个工程致力于完成一个优雅的IM实现方案。"
                             
                             ];
     MessageModel *textMessage = [TextMessageModel text:textArray[arc4random_uniform(4)]  username:@"qyu" timeStamp:[NSDate date:[NSDate date] WithFormate:KDateFormate] isSender:isSender];
@@ -38,7 +38,7 @@
         textMessage.imMessage = imMessage;
         
     }else{
-        textMessage.avatarUrl = @"http://www.deskcar.com/desktop/game/netgame/200882963407/2.jpg";
+        textMessage.avatarUrl = @"http://c.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=97a8a22cd139b6004d9b07b1d9601912/9f2f070828381f306b422c66ad014c086f06f0a2.jpg";
         
         textMessage.deliveryState = MessageDeliveryStateDelivered;
         
@@ -92,7 +92,7 @@
                                 [NSValue valueWithCGSize:CGSizeMake(800/2, 564/2)],
                                  [NSValue valueWithCGSize:CGSizeMake(200/2, 200/2)],
                                ];
-        photoMessage.avatarUrl = @"http://www.deskcar.com/desktop/game/netgame/200882963407/2.jpg";
+        photoMessage.avatarUrl = @"http://c.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=97a8a22cd139b6004d9b07b1d9601912/9f2f070828381f306b422c66ad014c086f06f0a2.jpg";
         NSInteger receiverRandomindex = arc4random_uniform(3);
         photoMessage.thumbnailUrl = receiverImageArray[receiverRandomindex];
         photoMessage.size = [(NSValue *)sizeArray[receiverRandomindex] CGSizeValue] ;
@@ -130,7 +130,7 @@
         videoMessage.imMessage = imMessage;
         
     }else{
-        videoMessage.avatarUrl = @"http://d.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=603e37439313b07ebde8580c39e7bd15/a8014c086e061d9591b7875a7bf40ad163d9cadb.jpg";
+        videoMessage.avatarUrl = @"http://c.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=97a8a22cd139b6004d9b07b1d9601912/9f2f070828381f306b422c66ad014c086f06f0a2.jpg";
          videoMessage.deliveryState = MessageDeliveryStateDelivered;
         http://www.mydigi.net/article/UploadPic/2013-5/2013514213339424.png
         videoMessage.videoThumbUrl = @[
@@ -172,7 +172,7 @@
         voiceMessage.imMessage = imMessage;
         
     }else{
-        voiceMessage.avatarUrl = @"http://www.deskcar.com/desktop/game/netgame/200882963407/2.jpg";
+        voiceMessage.avatarUrl = @"http://c.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=97a8a22cd139b6004d9b07b1d9601912/9f2f070828381f306b422c66ad014c086f06f0a2.jpg";
         voiceMessage.deliveryState = MessageDeliveryStateDelivered;
         
         MessageServiceModel *imMessage = [[MessageServiceModel alloc]init];
@@ -214,7 +214,7 @@
         localPositionMessage.imMessage = imMessage;
         
     }else{
-        localPositionMessage.avatarUrl = @"http://www.deskcar.com/desktop/game/netgame/200882963407/2.jpg";
+        localPositionMessage.avatarUrl = @"http://c.hiphotos.baidu.com/zhidao/wh%3D600%2C800/sign=97a8a22cd139b6004d9b07b1d9601912/9f2f070828381f306b422c66ad014c086f06f0a2.jpg";
          localPositionMessage.deliveryState = MessageDeliveryStateDelivered;
         
         MessageServiceModel *imMessage = [[MessageServiceModel alloc]init];
