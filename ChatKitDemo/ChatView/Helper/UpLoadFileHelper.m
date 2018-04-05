@@ -2,7 +2,7 @@
 //  UpLoadFileHelper.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/28.
+//  Created by joy_yu on 16/3/28.
 
 //
 
@@ -12,12 +12,8 @@
 
 @implementation UpLoadFileHelper
 {
-    
     AFHTTPSessionManager *_manage;
-    
 }
-
-
 
 + (instancetype)helper
 {
@@ -29,23 +25,16 @@
     return helper;
 }
 
-
-
 - (instancetype)init
 {
     
     self = [super init];
-    if (self) {
-        
+    if (self)
+    {
         _manage = [AFHTTPSessionManager manager];
-    
-    
     }
     return self;
 }
-
-
-
 
 #pragma mark --- 监听上传进度
 
@@ -55,10 +44,7 @@
             failure:(void(^)(NSError *error))failure
 {
     [self uploadFilesWithUrl:files.url datas:files.fileDatas serveName:files.serverName  fileNames:files.fileNames mimeType:files.mimeType params:files.parameter progress:progressHandler completion:completion failure:failure];
-    
 }
-
-
 
 /**
  *  @brief 监听上传进度
@@ -83,73 +69,53 @@
                 completion:(void(^)(id responseObject))completion
                    failure:(void(^)(NSError *error))failure 
 {
-
-    //  _manage.requestSerializer = ;
-    
     [_manage POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        
-        
-        for (int i = 0; i<datas.count; i++) {
-            
+        for (int i = 0; i<datas.count; i++)
+        {
             NSDate *date = [NSDate date];
             NSDateFormatter *formate = [[NSDateFormatter alloc]init];
             formate.dateFormat = @"yyyy/MM/dd hh:mm:ss";
             NSString *dateString = [formate stringFromDate:date];
-            
             //photo:
             NSString *fileName = [dateString stringByAppendingString:@".jpg"];
             //or
             // NSString *fileName = date;
-            
-            
+        
             //name:服务器上传文件名字  fileName:上传图片的名字  mineType:服务器指定的type:
             //formData拼接所有图片url或data数据
-            
             if([datas[i] isKindOfClass:[NSData class]])
             {
-                if (fileNames) {
+                if (fileNames)
+                {
                     [formData appendPartWithFileData:datas[i] name:serverName fileName:fileNames[i] mimeType:mimeType];
-                }else{
-                    
+                }
+                else
+                {
                     [formData appendPartWithFileData:datas[i] name:serverName fileName:fileName mimeType:mimeType];
                 }
-                
             }
-            else{
-                
-                if (fileNames) {
+            else
+            {
+                if (fileNames)
+                {
                     [formData appendPartWithFileURL:datas[i] name:serverName fileName:fileNames[i] mimeType:mimeType error:nil];
-                }else{
+                }
+                else
+                {
                     [formData appendPartWithFileURL:datas[i] name:serverName fileName:fileName mimeType:mimeType error:nil];
                 }
-                
             }
         }
-        
-        
-        
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         progressHandler(uploadProgress);
-        
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
         completion(responseObject);
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         failure(error);
-       
     }];
-    
 }
 
-
-
 @end
-
-
-
-
 
 @implementation FileConfig
 
@@ -172,7 +138,8 @@
                   fileNames:(NSArray *)fileNames
                    mimeType:(NSString *)mimeType
 {
-    if (self = [super init]) {
+    if (self = [super init])
+    {
         _url = url;
         _fileDatas  = fileDatas;
         _serverName = serveName;

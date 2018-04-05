@@ -2,7 +2,7 @@
 //  CameraHelper.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/27.
+//  Created by joy_yu on 16/3/27.
 
 //
 
@@ -30,8 +30,6 @@
     return helper;
 }
 
-
-
 - (void)showPickerViewControllerSourceType:(UIImagePickerControllerSourceType)sourceType onViewController:(UIViewController *)viewController completion:(DidFinishTakeMediaCompletionBlock)completion
 {
     if (![UIImagePickerController isSourceTypeAvailable:sourceType])
@@ -39,7 +37,6 @@
         completion(nil, nil);
         return;
     }
-    
     self.didFinishTakeMediaCompletion = completion;
      self.imagePickerController = [[UIImagePickerController alloc] init];
     self.imagePickerController.allowsEditing = NO;
@@ -49,7 +46,6 @@
     {
         self.imagePickerController.mediaTypes =  [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
     }
-    
     [viewController presentViewController:self.imagePickerController animated:YES completion:NULL];
 }
 
@@ -60,53 +56,32 @@
     }];
 }
 
-
-
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
    // NSLog(@"get the media info: %@", info);
     NSString* mediaType = [info objectForKey:UIImagePickerControllerMediaType];
     if ([mediaType isEqualToString:(NSString *)kUTTypeImage])
     {
-        
         //获取图片对象
         UIImage* image = [info objectForKey:UIImagePickerControllerOriginalImage];
         NSData *imageData = UIImageJPEGRepresentation(image, 1);
         self.didFinishTakeMediaCompletion ? self.didFinishTakeMediaCompletion(MediaTypePhoto,imageData) : nil;
-        
     }
     else if ([mediaType isEqualToString:(NSString *)kUTTypeMovie])
     {
         //获取视频文件的url
         NSURL* mediaURL = [info objectForKey:UIImagePickerControllerMediaURL];
-        
-
         //1.保存视频到相册
         NSData *videoData = [NSData dataWithContentsOfURL:mediaURL];
-      self.didFinishTakeMediaCompletion ? self.didFinishTakeMediaCompletion(MediaTypeVideo,videoData) : nil;
-        
+        self.didFinishTakeMediaCompletion ? self.didFinishTakeMediaCompletion(MediaTypeVideo,videoData) : nil;
     }
-    
-    
-    
-    
     //退出
     [self dismissPickerViewController:picker];
-    
 }
-
-
-
-
-
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [self dismissPickerViewController:picker];
 }
-
-
-
-
 
 @end

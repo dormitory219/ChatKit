@@ -2,14 +2,13 @@
 //  PhotoMessageModel.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/22.
+//  Created by joy_yu on 16/3/22.
 
 //
 
 #import "PhotoMessageModel.h"
 
 @implementation PhotoMessageModel
-
 
 + (instancetype)Photo:(NSString *)localPhotoPath
          thumbnailUrl:(NSString *)thumbnailUrl
@@ -21,7 +20,6 @@
 {
     return [[self alloc]initWithPhoto:localPhotoPath thumbnailUrl:thumbnailUrl originPhotoUrl:originPhotoUrl username:username timeStamp:timeStamp isSender:isSender];
 }
-
 
 - (instancetype)initWithPhoto:(NSString *)localPhotoPath
                  thumbnailUrl:(NSString *)thumbnailUrl
@@ -37,7 +35,6 @@
         self.originPhotoUrl = originPhotoUrl;
         self.username = username;
         self.timeStamp = timeStamp;
-        
         self.bubbleMessageBodyType = MessageBodyTypePhoto;
         self.isSender = isSender;
     }

@@ -2,7 +2,7 @@
 //  VoiceMessageModel.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/22.
+//  Created by joy_yu on 16/3/22.
 
 //
 
@@ -36,9 +36,6 @@
     return  [[self alloc]initWithVoicePath:voicePath voiceUrl:voiceUrl voiceDuration:voiceDuration username:username timeStamp:timeStamp isRead:isRead isSender:isSender];
 }
 
-
-
-
 - (instancetype)initWithVoicePath:(NSString *)voicePath
                          voiceUrl:(NSString *)voiceUrl
                     voiceDuration:(NSString *)voiceDuration
@@ -61,20 +58,17 @@
 {
     
     self = [super init];
-    if (self) {
+    if (self)
+    {
         self.voicePath = voicePath;
-        
-        
         self.username = username;
         self.timeStamp = timeStamp;
         self.isRead = isRead;
         self.voiceDuration = voiceDuration;
-        
         self.bubbleMessageBodyType = MessageBodyTypeVoice;
         self.isSender = isSender;
     }
     return self;
 }
-
 
 @end

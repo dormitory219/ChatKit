@@ -2,7 +2,7 @@
 //  UIImage+Addition.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/28.
+//  Created by joy_yu on 16/3/28.
 
 //
 
@@ -10,11 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
-
-
 @implementation UIImage (Addition)
-
-
 
 //得到视频的缩略图
 +(UIImage *)VideoThumbImage:(NSURL *)videoURL
@@ -29,30 +25,30 @@
     UIImage *thumb = [[UIImage alloc] initWithCGImage:image];
     CGImageRelease(image);
     return thumb;
-    
 }
-
 
 //保持原来的长宽比，生成原尺寸比例的缩略图
 + (UIImage *)ThumbnailWithImage:(UIImage *)image scale:(CGFloat)scale;
 {
     UIImage *newimage;
-    if (nil == image) {
+    if (nil == image)
+    {
         newimage = nil;
     }
-    else{
-        
-        
+    else
+    {
         CGSize oldsize = image.size;
         CGSize asize = CGSizeMake(oldsize.width*scale, oldsize.height*scale);
         CGRect rect;
-        if (asize.width/asize.height > oldsize.width/oldsize.height) {
+        if (asize.width/asize.height > oldsize.width/oldsize.height)
+        {
             rect.size.width = asize.height*oldsize.width/oldsize.height;
             rect.size.height = asize.height;
             rect.origin.x = (asize.width - rect.size.width)/2;
             rect.origin.y = 0;
         }
-        else{
+        else
+        {
             rect.size.width = asize.width;
             rect.size.height = asize.width*oldsize.height/oldsize.width;
             rect.origin.x = 0;

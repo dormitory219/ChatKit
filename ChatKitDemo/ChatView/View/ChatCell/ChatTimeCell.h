@@ -2,7 +2,7 @@
 //  ChatTimeCell.h
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/22.
+//  Created by joy_yu on 16/3/22.
 
 //
 

@@ -2,7 +2,7 @@
 //  UpLoadFileHelper.h
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/28.
+//  Created by joy_yu on 16/3/28.
 
 //
 
@@ -10,14 +10,9 @@
 #import <AFNetworking.h>
 #import "ChatHelp.h"
 
-
-
-
 @class FileConfig;
 
 @interface UpLoadFileHelper : NSObject
-
-
 
 + (instancetype)helper;
 
@@ -38,16 +33,12 @@
 
 @end
 
-
-
-
 #pragma mark -- FileConfig
 
 /**
  *  @brief 用来封装上文件数据的模型类
  */
 @interface FileConfig :NSObject
-
 
 /**
  *  @brief url
@@ -64,7 +55,6 @@
  */
 @property (nonatomic, copy) NSString *serverName;
 
-
 /**
  *  @brief 上传文件名:可不传
  */
@@ -75,12 +65,10 @@
  */
 @property (nonatomic, copy) NSString *mimeType;
 
-
 /**
  *  @brief 上传参数
  */
 @property (nonatomic, copy) NSDictionary *parameter;
-
 
 + (instancetype)fileConfigWithUrl:(NSString *)url
                          fileData:(NSArray *)fileDatas

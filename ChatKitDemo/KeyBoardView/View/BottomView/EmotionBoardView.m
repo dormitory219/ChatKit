@@ -2,7 +2,7 @@
 //  EmotionBoardView.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/25.
+//  Created by joy_yu on 16/3/25.
 
 //
 
@@ -15,12 +15,9 @@
 #define  KColumNum 7
 #define  KRowNum 3
 
-
-
 //其他表情排布
 #define  KOtherColumNum 5
 #define  KOtherRowNum 2
-
 
 //类型0 gif表情
 
@@ -111,96 +108,78 @@
         self.emotionType = EmotionTypeEmoij;
         [self.allEmoijs addObjectsFromArray:[Emoji allEmoji]];
     }
-    
-    
     //gif 和 photo
     else
     {
-        
-        
-        
         //gif通用名
         NSString *gifName = nil;
-        switch (self.faceType) {
-                
+        switch (self.faceType)
+        {
             case 1:
                 self.emotionType = EmotionTypeGif;
                 gifName = @"emotion";
-                
                 break;
                 
             case 2:
                 self.emotionType = EmotionTypeGif;
                 gifName = @"cuteEmotion";
-                
                 break;
                 
             case 3:
                 self.emotionType = EmotionTypeGif;
                 gifName = @"niceEmotion";
-                
                 break;
                 
             case 4:
                 self.emotionType = EmotionTypePhoto;
                 gifName = @"baoManEmotion";
-                
                 break;
                 
             case 5:
                 self.emotionType = EmotionTypeGif;
                 gifName = @"emotion";
-                
                 break;
                 
             case 6:
                 self.emotionType = EmotionTypeGif;
                 gifName = @"niceEmotion";
-                
                 break;
                 
             case 7:
                 self.emotionType = EmotionTypeGif;
                 gifName = @"cuteEmotion";
-                
                 break;
                 
             case 8:
                 self.emotionType = EmotionTypeGif;
                 gifName = @"emotion";
-                
                 break;
-                
-                
+            
             default:
                 break;
         }
         
-        
-        for (int i = 0; i<fileArray.count; i++) {
-            
+        for (int i = 0; i<fileArray.count; i++)
+        {
             [self.allEmoijs addObject:[self locationGifPathWithPosition:i gifName:gifName faceType:self.faceType]];
         }
     }
 }
 
-
-
-
 - (void)layOut
 {
     NSInteger columNum;
     NSInteger rowNum;
-    
-    if (self.emotionType == EmotionTypeEmoij) {
+    if (self.emotionType == EmotionTypeEmoij)
+    {
         columNum = KColumNum;
         rowNum  = KRowNum;
-    }else{
+    }
+    else
+    {
         columNum = KOtherColumNum;
         rowNum  = KOtherRowNum;
     }
-    
-    
     CGFloat width = (self.width0 - KMargin*(columNum+1))/columNum;
     CGFloat height = width;
     
@@ -208,7 +187,6 @@
     BOOL isDeleteBtn = NO;
     for (int i = 0; i< self.allEmoijs.count; i++)
     {
-        
         UIButton *btn = [[UIButton alloc]init];
         NSInteger page = i/(rowNum*columNum);
         btn.frame = [self getFrameWithColumesOfPerRow:columNum rowsOfPerColumn:rowNum itemWidth:width itemHeight:height marginX:KMargin maginY:KMargin atIndex:i atPage:page scrollView:self.scrollView];
@@ -216,7 +194,6 @@
         //是emoij,删除键和emoij布局
         if (self.emotionType == EmotionTypeEmoij)
         {
-            
             if ((i+1) % (columNum*rowNum) == 0  &&  i > 0)
             {
                 isDeleteBtn = YES;
@@ -224,39 +201,24 @@
                 [btn addTarget:self action:@selector(emoijClickAction:) forControlEvents:UIControlEventTouchUpInside];
                 //标记删除键
                 btn.tag = -1;
-                
             }
-            
             else
             {
-                
                 if (isDeleteBtn)
                 {
                     i --;
                 }
-                
-                
-                
                 [btn setTitle: self.allEmoijs[i] forState:UIControlStateNormal];
                 [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-                
                 [btn addTarget:self action:@selector(emoijClickAction:) forControlEvents:UIControlEventTouchUpInside];
                 btn.tag = i;
-                
                 isDeleteBtn = NO;
-                
             }
-            
-            
             [self addSubview:btn];
-            
         }
-        
         //gif
         else if(self.emotionType == EmotionTypeGif)
         {
-            
-            
             NSString *localPath = [[NSBundle bundle:BundleName]pathForResource:self.allEmoijs[i] ofType:@"gif"];
             FLAnimatedImageView *imageV = [[FLAnimatedImageView alloc]initWithFrame:btn.frame];
             imageV.userInteractionEnabled = YES;
@@ -266,9 +228,6 @@
             UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(emotionImageClickAction:)];
             [self addSubview:imageV];
             [imageV addGestureRecognizer:tapGesture];
-            
-            
-            
             /*
              //gif表情使用静态表情面板：btn
              NSString *imageName = [[[NSString stringWithFormat:@"section%ld_",self.faceType-1]stringByAppendingString:self.allEmoijs[i]]stringByAppendingString:@"@2x"];
@@ -279,30 +238,18 @@
              [self addSubview:btn];
              */
         }
-        
-        
-        
         //photo
         else if(self.emotionType == EmotionTypePhoto)
         {
-            
             NSString *localPath = [[NSBundle bundle:BundleName]pathForResource:self.allEmoijs[i] ofType:@"jpg"];
-            
             [btn setImage:[UIImage imageWithContentsOfFile:localPath] forState:UIControlStateNormal];
             [btn addTarget:self action:@selector(emotionImageClickAction:) forControlEvents:UIControlEventTouchUpInside];
             btn.tag = i;
             [self addSubview:btn];
         }
-        
-        
     }
-    
     self.page =  self.allEmoijs.count/(columNum*rowNum)+1;
 }
-
-
-
-
 
 /**
  *  @brief 获取指定gif包里的gif文件
@@ -314,7 +261,6 @@
  *  @return <#return value description#>
  */
 
-
 //@"/gifFace/gifType1/emotion0",
 //@"/gifFace/gifType1/emotion1"
 
@@ -323,10 +269,7 @@
                                  faceType:(NSInteger)faceType
 {
     NSString *path = [@"gifFace" stringByAppendingPathComponent:[NSString stringWithFormat:@"gifType%ld",faceType]];
-    
     path = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@%ld",gifName,position]];
-    
-    
     return path;
 }
 
@@ -334,45 +277,30 @@
 //gif表情点击：发消息
 - (void)emotionImageClickAction:(UIButton *)btn
 {
-    
     NSString *localPath = nil;
-    
     if (self.emotionType == EmotionTypePhoto)
     {
         localPath  = [[NSBundle bundle:BundleName]pathForResource:self.allEmoijs[btn.tag] ofType:@"jpg"];
     }
-    
     else if (self.emotionType == EmotionTypeGif)
     {
-        
         FLAnimatedImageView *imageV = (FLAnimatedImageView *)[(UIGestureRecognizer * )btn view];
         localPath  = [[NSBundle bundle:BundleName]pathForResource:self.allEmoijs[imageV.tag] ofType:@"gif"];
     }
-   
-    
     if (self.emotionViewDelegate && [self.emotionViewDelegate respondsToSelector:@selector(sendEmotionImage:emotionType:)])
     {
-        
         [self.emotionViewDelegate sendEmotionImage:localPath emotionType:self.emotionType];
-        
     }
 }
-
-
 
 //emoij表情点击：加内容
 - (void)emoijClickAction:(UIButton *)btn
 {
-
-    if (self.emotionViewDelegate && [self.emotionViewDelegate respondsToSelector:@selector(addEmoij:isDeleteLastEmoij:)]) {
-        
+    if (self.emotionViewDelegate && [self.emotionViewDelegate respondsToSelector:@selector(addEmoij:isDeleteLastEmoij:)])
+    {
         btn.tag == -1 ? [self.emotionViewDelegate addEmoij:btn.titleLabel.text isDeleteLastEmoij:YES] : [self.emotionViewDelegate addEmoij:btn.titleLabel.text isDeleteLastEmoij:NO];
     }
-    
-    
 }
-
-
 
 /**
  *  @brief 格式布局
@@ -403,12 +331,10 @@
     return itemFrame;
 }
 
-
-
-
 - (NSMutableArray *)allEmoijs
 {
-    if (_allEmoijs == nil) {
+    if (_allEmoijs == nil)
+    {
         _allEmoijs = [[NSMutableArray alloc]init];
     }
     return _allEmoijs;

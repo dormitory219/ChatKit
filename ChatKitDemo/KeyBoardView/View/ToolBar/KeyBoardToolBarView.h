@@ -2,7 +2,7 @@
 //  KeyBoardToolBarView.h
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/20.
+//  Created by joy_yu on 16/3/20.
 
 //
 

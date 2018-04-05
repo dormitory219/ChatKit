@@ -2,7 +2,7 @@
 //  ChatHelp.h
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/21.
+//  Created by joy_yu on 16/3/21.
 //  Copyright © 2016年 bdcluster(上海大数聚科技有限公司). All rights reserved.
 //
 
@@ -18,7 +18,6 @@
 #define KLeftMargin 12
 
 
-
 //BubbleImageView
 
 #define KTopBubbleImageMargin 3.5
@@ -32,11 +31,8 @@
 #define KBubbleImageMaxWidth 145
 #define KBubbleImageMaxHeight 145
 
-
 //bubbleView最大宽度
 #define KMaxWidth SCREEN_WIDTH*3/5
-
-
 
 
 //BubbleVoiceRecoderView

@@ -2,15 +2,13 @@
 //  NSBundle+KeyBoardExtension.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/20.
+//  Created by joy_yu on 16/3/20.
 
 //
 
 #import "NSBundle+KeyBoardExtension.h"
 
 @implementation NSBundle (KeyBoardExtension)
-
-
 /**
  *  @brief 取出指定bundle名中的image
  *
@@ -21,12 +19,9 @@
  */
 + (UIImage *)imageWithBundle:(NSString *)bundleName imageName:(NSString *)imageName
 {
-    
     NSBundle *bundle = [self bundle:bundleName];
-    
     NSString *imagePath =  [bundle pathForResource:imageName ofType:@"png"];
-   return  [UIImage imageWithContentsOfFile:imagePath];
-    
+    return  [UIImage imageWithContentsOfFile:imagePath];
 }
 
 /**

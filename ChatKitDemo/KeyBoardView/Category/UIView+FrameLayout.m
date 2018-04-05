@@ -2,7 +2,7 @@
 //  UIView+FrameLayout.m
 //  Frame分类
 //
-//  Created by 余强 on 16/1/28.
+//  Created by joy_yu on 16/1/28.
 
 //
 
@@ -105,11 +105,13 @@
     self.frame = frame;
 }
 
-- (void)setCenterX0:(CGFloat)centerX{
+- (void)setCenterX0:(CGFloat)centerX
+{
     self.center = CGPointMake(centerX, self.center.y);
 }
 
-- (void)setCenterY0:(CGFloat)centerY{
+- (void)setCenterY0:(CGFloat)centerY
+{
     self.center = CGPointMake(self.center.x, centerY);
 }
 @end

@@ -2,7 +2,7 @@
 //  VideoPlayController.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/27.
+//  Created by joy_yu on 16/3/27.
 
 //
 
@@ -16,6 +16,10 @@
 
 @implementation VideoPlayController
 
+-(void)dealloc
+{
+    [self.playerView cancelAutoFadeOutControlBar];
+}
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -30,10 +34,9 @@
     [UIApplication sharedApplication].statusBarHidden = NO;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    
     self.playerView = [ZFPlayerView setupZFPlayer];
     [self.view addSubview:self.playerView];
     [self.playerView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -42,31 +45,23 @@
         make.height.equalTo(self.playerView.mas_width).multipliedBy(9.0f/16.0f);
     }];
     
-    
     self.playerView.videoURL = self.videoURL;
     __weak typeof(self) weakSelf = self;
     self.playerView.goBackBlock = ^{
         [weakSelf dismissViewControllerAnimated:NO completion:nil];
     };
-    
-    
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    if (toInterfaceOrientation == UIInterfaceOrientationPortrait) {
+    if (toInterfaceOrientation == UIInterfaceOrientationPortrait)
+    {
         self.view.backgroundColor  = [UIColor whiteColor];
-    }else if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+    }
+    else if (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
+    {
         self.view.backgroundColor = [UIColor blackColor];
     }
 }
-
-
--(void)dealloc
-{
-    [self.playerView cancelAutoFadeOutControlBar];
-}
-
-
 
 @end

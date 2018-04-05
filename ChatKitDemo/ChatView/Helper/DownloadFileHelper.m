@@ -2,7 +2,7 @@
 //  DownloadFileHelper.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/27.
+//  Created by joy_yu on 16/3/27.
 
 //
 
@@ -44,25 +44,15 @@
                complete:(void(^)(NSURL *url,NSError *error))completionHandler
 
 {
-    __block  NSURL *fileUrl = nil;
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     NSURLSessionDownloadTask *downloadTask = [_manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
-        
         progressHandler(downloadProgress);
-       
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-        
         return [NSURL fileURLWithPath:destinationPath];
-        
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-        
-        
           completionHandler(filePath,error);
     }];
-    
-    
     [downloadTask resume];
-   
 }
 
 @end

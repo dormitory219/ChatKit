@@ -2,7 +2,7 @@
 //  MessageModel.h
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/21.
+//  Created by joy_yu on 16/3/21.
 
 //
 
@@ -18,10 +18,8 @@
 
 @interface MessageModel : NSObject
 
-
 //textMessage
 @property (nonatomic,copy)     NSString *text;
-
 
 //photoMessage
 /**
@@ -30,7 +28,6 @@
 @property (nonatomic,assign)   CGSize size;
 
 //@property (nonatomic,strong)   UIImage *photo;
-
 
 /**
  *  @brief 本地图片路径:设置path，而不是UIImage对象，是为了能实现gif图片与静态图片的显示:
@@ -85,11 +82,6 @@
  */
 @property (nonatomic,copy)     NSString *voiceDuration;
 
-
-
-
-
-
 //locationMessage
 /**
  *  @brief 地图截屏本地地址
@@ -97,10 +89,6 @@
 @property (nonatomic,copy)  NSString *localPositionPhotoPath;
 @property (nonatomic,copy)    NSString *address;
 @property (nonatomic,strong)  CLLocation *location;
-
-
-
-
 
 //User
 @property (nonatomic,strong)  UIImage *avatar;
@@ -111,8 +99,6 @@
 @property (nonatomic,strong)  NSString *username;
 @property (nonatomic,assign)  BOOL isSender;
 
-
-
 //others
 @property (nonatomic,strong)  NSString *timeStamp;
 @property (nonatomic,assign)  BOOL sended;
@@ -120,14 +106,9 @@
 @property (nonatomic,assign)  BOOL isRead;
 @property (nonatomic,assign)  MessageDeliveryState deliveryState;
 
-
-
 /**
  *  @brief 业务层model
  */
 @property(nonatomic,strong)  MessageServiceModel *imMessage;
-
-
-
 
 @end

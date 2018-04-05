@@ -2,7 +2,7 @@
 //  BubbleClickHandleHelper.h
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/27.
+//  Created by joy_yu on 16/3/27.
 
 //
 
@@ -11,7 +11,6 @@
 #import "MLEmojiLabel.h"
 
 @interface BubblePressHandleHelper : NSObject
-
 
 + (instancetype)helper;
 
@@ -23,7 +22,6 @@
 
 //点击videoBubble,浏览视频
 - (void)videoPlay:(MessageModel *)message;
-
 
 //点击locationBubble,浏览地图
 - (void)locationMap:(MessageModel *)message viewController:(UIViewController *)controller;

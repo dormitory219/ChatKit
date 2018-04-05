@@ -2,7 +2,7 @@
 //  RecordingShowView.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/20.
+//  Created by joy_yu on 16/3/20.
 
 //
 
@@ -27,18 +27,12 @@
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    if (self) {
-        
-        
+    if (self)
+    {
         [self setUpUi];
-        
-        
- 
     }
     return self;
 }
-
-
 
 - (void)setUpUi
 {
@@ -48,18 +42,10 @@
     self.bgView.layer.masksToBounds = YES;
     self.bgView.alpha = 0.6;
     [self addSubview:self.bgView];
-    
-    
-    
-    
+
     self.recordVoiceView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 0, self.bounds.size.width - 20, self.bounds.size.height - 10)];
     self.recordVoiceView.image = [UIImage imageNamed:@"VoiceSearchFeedback001"];
     [self addSubview:self.recordVoiceView];
-    
-    
-    
-    
-    
     
     self.textLabel = [[UILabel alloc] initWithFrame:CGRectMake(5,self.bounds.size.height - 30,self.bounds.size.width - 10,25)];
     self.textLabel.textAlignment = NSTextAlignmentCenter;
@@ -73,12 +59,6 @@
     [self addSubview:self.textLabel];
 }
 
-
-
-
-
-
-
 // 录音按钮按下
 -(void)recordButtonTouchDown
 {
@@ -88,14 +68,7 @@
     self.textLabel.backgroundColor = [UIColor clearColor];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(updateVoiceImage)
      userInfo:nil repeats:YES];
-    
-    
     [[UIApplication sharedApplication].keyWindow addSubview:self];
-    
-    
-    
- 
-    
     
 //    [[VoiceRecordHelper sharedInstance]asyncStartRecordingWithPath:fileName completion:^(NSError *error) {
 //        if (error) {
@@ -105,13 +78,11 @@
  
 }
 
-
 // 手指在录音按钮内部时离开
 -(void)recordButtonTouchUpInside
 {
     [_timer invalidate];
 }
-
 
 // 手指在录音按钮外部时离开
 -(void)recordButtonTouchUpOutside
@@ -120,7 +91,6 @@
     
     [self removeFromSuperview];
 }
-
 
 // 手指移动到录音按钮内部
 -(void)recordButtonDragInside
@@ -138,14 +108,11 @@
     self.textLabel.backgroundColor = [UIColor redColor];
 }
 
-
 - (void)setPeakPower:(float)peakPower
 {
     _peakPower = peakPower;
     [self updateVoiceImage];
 }
-
-
 
 -(void)updateVoiceImage
 {
@@ -192,9 +159,5 @@
            [self.recordVoiceView setImage:[NSBundle imageWithBundle:BundleName imageName:@"VoiceSearchFeedback020@2x"]];
     }
 }
-
-
-
-
 
 @end

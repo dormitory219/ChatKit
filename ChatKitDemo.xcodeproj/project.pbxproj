@@ -10,7 +10,6 @@
 		351DE901E460A08D10FFF3D8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FF1DC2EB0373AF44D44307 /* libPods.a */; };
 		45B28DA41CAD13830010C1ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B28DA31CAD13830010C1ED /* main.m */; };
 		45B28DA71CAD13830010C1ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B28DA61CAD13830010C1ED /* AppDelegate.m */; };
-		45B28DAA1CAD13830010C1ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B28DA91CAD13830010C1ED /* ViewController.m */; };
 		45B28DAD1CAD13830010C1ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B28DAB1CAD13830010C1ED /* Main.storyboard */; };
 		45B28DAF1CAD13830010C1ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B28DAE1CAD13830010C1ED /* Assets.xcassets */; };
 		45B28DB21CAD13830010C1ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B28DB01CAD13830010C1ED /* LaunchScreen.storyboard */; };
@@ -20,8 +19,6 @@
 		45B6B8961CAD367A00882E79 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B7DB1CAD367900882E79 /* UIImage+Addition.m */; };
 		45B6B8971CAD367A00882E79 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B7DE1CAD367900882E79 /* 114.png */; };
 		45B6B8981CAD367A00882E79 /* 150511_JiveBike.mov in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B7DF1CAD367900882E79 /* 150511_JiveBike.mov */; };
-		45B6B8991CAD367A00882E79 /* audio1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B7E01CAD367900882E79 /* audio1.m4a */; };
-		45B6B89A1CAD367A00882E79 /* audio2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B7E11CAD367900882E79 /* audio2.m4a */; };
 		45B6B89B1CAD367A00882E79 /* AudioPlayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B7E31CAD367900882E79 /* AudioPlayHelper.m */; };
 		45B6B89C1CAD367A00882E79 /* BubblePressHandleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B7E51CAD367900882E79 /* BubblePressHandleHelper.m */; };
 		45B6B89D1CAD367A00882E79 /* CacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B7E71CAD367900882E79 /* CacheHelper.m */; };
@@ -38,8 +35,6 @@
 		45B6B8A81CAD367A00882E79 /* playVideo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B7F91CAD367900882E79 /* playVideo2.jpg */; };
 		45B6B8A91CAD367A00882E79 /* UpLoadFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B7FB1CAD367A00882E79 /* UpLoadFileHelper.m */; };
 		45B6B8AA1CAD367A00882E79 /* 登录按钮背景@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B7FC1CAD367A00882E79 /* 登录按钮背景@2x.png */; };
-		45B6B8AB1CAD367A00882E79 /* 贝加尔湖畔.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B7FD1CAD367A00882E79 /* 贝加尔湖畔.mp3 */; };
-		45B6B8AC1CAD367A00882E79 /* 魔漫2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B7FE1CAD367A00882E79 /* 魔漫2.jpg */; };
 		45B6B8AD1CAD367A00882E79 /* LocationMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8011CAD367A00882E79 /* LocationMessageModel.m */; };
 		45B6B8AE1CAD367A00882E79 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8031CAD367A00882E79 /* MessageModel.m */; };
 		45B6B8AF1CAD367A00882E79 /* MessageServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8051CAD367A00882E79 /* MessageServiceModel.m */; };
@@ -81,7 +76,6 @@
 		45B6B8D41CAD367A00882E79 /* MyAnnoation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8571CAD367A00882E79 /* MyAnnoation.m */; };
 		45B6B8D51CAD367A00882E79 /* ChatCollectionViewController+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B85A1CAD367A00882E79 /* ChatCollectionViewController+Helper.m */; };
 		45B6B8D61CAD367A00882E79 /* ChatCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B85C1CAD367A00882E79 /* ChatCollectionViewController.m */; };
-		45B6B8D71CAD367A00882E79 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B85E1CAD367A00882E79 /* ChatViewController.m */; };
 		45B6B8D81CAD367A00882E79 /* MapLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8601CAD367A00882E79 /* MapLocationController.m */; };
 		45B6B8D91CAD367A00882E79 /* VideoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8621CAD367A00882E79 /* VideoPlayController.m */; };
 		45B6B8DB1CAD367A00882E79 /* WebVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8661CAD367A00882E79 /* WebVController.m */; };
@@ -104,11 +98,8 @@
 		45B6B8EC1CAD367A00882E79 /* VoiceRecordBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B6B8941CAD367A00882E79 /* VoiceRecordBtn.m */; };
 		45B6B8F81CAD5E6200882E79 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B8ED1CAD5E6200882E79 /* 114.png */; };
 		45B6B8F91CAD5E6200882E79 /* 150511_JiveBike.mov in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B8EE1CAD5E6200882E79 /* 150511_JiveBike.mov */; };
-		45B6B8FA1CAD5E6200882E79 /* 贝加尔湖畔.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B8EF1CAD5E6200882E79 /* 贝加尔湖畔.mp3 */; };
 		45B6B8FB1CAD5E6200882E79 /* 登录按钮背景@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B8F01CAD5E6200882E79 /* 登录按钮背景@2x.png */; };
 		45B6B8FC1CAD5E6200882E79 /* 魔漫2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B8F11CAD5E6200882E79 /* 魔漫2.jpg */; };
-		45B6B8FD1CAD5E6200882E79 /* audio1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B8F21CAD5E6200882E79 /* audio1.m4a */; };
-		45B6B8FE1CAD5E6200882E79 /* audio2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B8F31CAD5E6200882E79 /* audio2.m4a */; };
 		45B6B8FF1CAD5E6200882E79 /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B8F41CAD5E6200882E79 /* house.jpg */; };
 		45B6B9001CAD5E6200882E79 /* Love Story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B8F51CAD5E6200882E79 /* Love Story.mp3 */; };
 		45B6B9011CAD5E6200882E79 /* playVideo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45B6B8F61CAD5E6200882E79 /* playVideo1.jpg */; };
@@ -138,8 +129,6 @@
 		45B28DA31CAD13830010C1ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45B28DA51CAD13830010C1ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45B28DA61CAD13830010C1ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		45B28DA81CAD13830010C1ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		45B28DA91CAD13830010C1ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		45B28DAC1CAD13830010C1ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45B28DAE1CAD13830010C1ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45B28DB11CAD13830010C1ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -157,8 +146,6 @@
 		45B6B7DC1CAD367900882E79 /* ChatHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatHelp.h; sourceTree = "<group>"; };
 		45B6B7DE1CAD367900882E79 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 114.png; path = ../Helper/114.png; sourceTree = "<group>"; };
 		45B6B7DF1CAD367900882E79 /* 150511_JiveBike.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = 150511_JiveBike.mov; path = ../Helper/150511_JiveBike.mov; sourceTree = "<group>"; };
-		45B6B7E01CAD367900882E79 /* audio1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = audio1.m4a; path = ../Helper/audio1.m4a; sourceTree = "<group>"; };
-		45B6B7E11CAD367900882E79 /* audio2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = audio2.m4a; path = ../Helper/audio2.m4a; sourceTree = "<group>"; };
 		45B6B7E21CAD367900882E79 /* AudioPlayHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayHelper.h; sourceTree = "<group>"; };
 		45B6B7E31CAD367900882E79 /* AudioPlayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayHelper.m; sourceTree = "<group>"; };
 		45B6B7E41CAD367900882E79 /* BubblePressHandleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubblePressHandleHelper.h; sourceTree = "<group>"; };
@@ -186,8 +173,6 @@
 		45B6B7FA1CAD367900882E79 /* UpLoadFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpLoadFileHelper.h; sourceTree = "<group>"; };
 		45B6B7FB1CAD367A00882E79 /* UpLoadFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpLoadFileHelper.m; sourceTree = "<group>"; };
 		45B6B7FC1CAD367A00882E79 /* 登录按钮背景@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "登录按钮背景@2x.png"; path = "../Helper/登录按钮背景@2x.png"; sourceTree = "<group>"; };
-		45B6B7FD1CAD367A00882E79 /* 贝加尔湖畔.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "贝加尔湖畔.mp3"; path = "../Helper/贝加尔湖畔.mp3"; sourceTree = "<group>"; };
-		45B6B7FE1CAD367A00882E79 /* 魔漫2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "魔漫2.jpg"; path = "../Helper/魔漫2.jpg"; sourceTree = "<group>"; };
 		45B6B8001CAD367A00882E79 /* LocationMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMessageModel.h; sourceTree = "<group>"; };
 		45B6B8011CAD367A00882E79 /* LocationMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMessageModel.m; sourceTree = "<group>"; };
 		45B6B8021CAD367A00882E79 /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
@@ -265,8 +250,6 @@
 		45B6B85A1CAD367A00882E79 /* ChatCollectionViewController+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChatCollectionViewController+Helper.m"; sourceTree = "<group>"; };
 		45B6B85B1CAD367A00882E79 /* ChatCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCollectionViewController.h; sourceTree = "<group>"; };
 		45B6B85C1CAD367A00882E79 /* ChatCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCollectionViewController.m; sourceTree = "<group>"; };
-		45B6B85D1CAD367A00882E79 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
-		45B6B85E1CAD367A00882E79 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		45B6B85F1CAD367A00882E79 /* MapLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationController.h; sourceTree = "<group>"; };
 		45B6B8601CAD367A00882E79 /* MapLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationController.m; sourceTree = "<group>"; };
 		45B6B8611CAD367A00882E79 /* VideoPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayController.h; sourceTree = "<group>"; };
@@ -311,11 +294,8 @@
 		45B6B8941CAD367A00882E79 /* VoiceRecordBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceRecordBtn.m; sourceTree = "<group>"; };
 		45B6B8ED1CAD5E6200882E79 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
 		45B6B8EE1CAD5E6200882E79 /* 150511_JiveBike.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 150511_JiveBike.mov; sourceTree = "<group>"; };
-		45B6B8EF1CAD5E6200882E79 /* 贝加尔湖畔.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贝加尔湖畔.mp3"; sourceTree = "<group>"; };
 		45B6B8F01CAD5E6200882E79 /* 登录按钮背景@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录按钮背景@2x.png"; sourceTree = "<group>"; };
 		45B6B8F11CAD5E6200882E79 /* 魔漫2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "魔漫2.jpg"; sourceTree = "<group>"; };
-		45B6B8F21CAD5E6200882E79 /* audio1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio1.m4a; sourceTree = "<group>"; };
-		45B6B8F31CAD5E6200882E79 /* audio2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio2.m4a; sourceTree = "<group>"; };
 		45B6B8F41CAD5E6200882E79 /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
 		45B6B8F51CAD5E6200882E79 /* Love Story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Love Story.mp3"; sourceTree = "<group>"; };
 		45B6B8F61CAD5E6200882E79 /* playVideo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = playVideo1.jpg; sourceTree = "<group>"; };
@@ -379,8 +359,6 @@
 				45B6B8671CAD367A00882E79 /* KeyBoardView */,
 				45B28DA51CAD13830010C1ED /* AppDelegate.h */,
 				45B28DA61CAD13830010C1ED /* AppDelegate.m */,
-				45B28DA81CAD13830010C1ED /* ViewController.h */,
-				45B28DA91CAD13830010C1ED /* ViewController.m */,
 				45B28DAB1CAD13830010C1ED /* Main.storyboard */,
 				45B28DAE1CAD13830010C1ED /* Assets.xcassets */,
 				45B28DB01CAD13830010C1ED /* LaunchScreen.storyboard */,
@@ -497,26 +475,19 @@
 			children = (
 				45B6B8ED1CAD5E6200882E79 /* 114.png */,
 				45B6B8EE1CAD5E6200882E79 /* 150511_JiveBike.mov */,
-				45B6B8EF1CAD5E6200882E79 /* 贝加尔湖畔.mp3 */,
 				45B6B8F01CAD5E6200882E79 /* 登录按钮背景@2x.png */,
 				45B6B8F11CAD5E6200882E79 /* 魔漫2.jpg */,
-				45B6B8F21CAD5E6200882E79 /* audio1.m4a */,
-				45B6B8F31CAD5E6200882E79 /* audio2.m4a */,
 				45B6B8F41CAD5E6200882E79 /* house.jpg */,
 				45B6B8F51CAD5E6200882E79 /* Love Story.mp3 */,
 				45B6B8F61CAD5E6200882E79 /* playVideo1.jpg */,
 				45B6B8F71CAD5E6200882E79 /* playVideo2.jpg */,
 				45B6B7DE1CAD367900882E79 /* 114.png */,
 				45B6B7DF1CAD367900882E79 /* 150511_JiveBike.mov */,
-				45B6B7E01CAD367900882E79 /* audio1.m4a */,
-				45B6B7E11CAD367900882E79 /* audio2.m4a */,
 				45B6B7EE1CAD367900882E79 /* house.jpg */,
 				45B6B7F31CAD367900882E79 /* Love Story.mp3 */,
 				45B6B7F81CAD367900882E79 /* playVideo1.jpg */,
 				45B6B7F91CAD367900882E79 /* playVideo2.jpg */,
 				45B6B7FC1CAD367A00882E79 /* 登录按钮背景@2x.png */,
-				45B6B7FD1CAD367A00882E79 /* 贝加尔湖畔.mp3 */,
-				45B6B7FE1CAD367A00882E79 /* 魔漫2.jpg */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -689,8 +660,6 @@
 				45B6B85A1CAD367A00882E79 /* ChatCollectionViewController+Helper.m */,
 				45B6B85B1CAD367A00882E79 /* ChatCollectionViewController.h */,
 				45B6B85C1CAD367A00882E79 /* ChatCollectionViewController.m */,
-				45B6B85D1CAD367A00882E79 /* ChatViewController.h */,
-				45B6B85E1CAD367A00882E79 /* ChatViewController.m */,
 				45B6B85F1CAD367A00882E79 /* MapLocationController.h */,
 				45B6B8601CAD367A00882E79 /* MapLocationController.m */,
 				45B6B8611CAD367A00882E79 /* VideoPlayController.h */,
@@ -710,7 +679,6 @@
 				45B6B8751CAD367A00882E79 /* KeyBoardHeader.h */,
 				45B6B8761CAD367A00882E79 /* KeyBoardHelpDefine.h */,
 				45B6B8771CAD367A00882E79 /* Resource */,
-				45B6B8791CAD367A00882E79 /* Vendor */,
 				45B6B87A1CAD367A00882E79 /* View */,
 			);
 			path = KeyBoardView;
@@ -753,13 +721,6 @@
 				45B6B8781CAD367A00882E79 /* chatUiResource.bundle */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		45B6B8791CAD367A00882E79 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
 			sourceTree = "<group>";
 		};
 		45B6B87A1CAD367A00882E79 /* View */ = {
@@ -941,11 +902,8 @@
 			files = (
 				45B6B8B81CAD367A00882E79 /* MLEmoji_Expression.plist in Resources */,
 				45B6B8B71CAD367A00882E79 /* MLEmoji_Expression.bundle in Resources */,
-				45B6B8FA1CAD5E6200882E79 /* 贝加尔湖畔.mp3 in Resources */,
 				45B6B8FC1CAD5E6200882E79 /* 魔漫2.jpg in Resources */,
 				45B28DB21CAD13830010C1ED /* LaunchScreen.storyboard in Resources */,
-				45B6B8AC1CAD367A00882E79 /* 魔漫2.jpg in Resources */,
-				45B6B8FE1CAD5E6200882E79 /* audio2.m4a in Resources */,
 				45B6B8B91CAD367A00882E79 /* MLEmoji_ExpressionImage.plist in Resources */,
 				45B6B8B61CAD367A00882E79 /* Info.plist in Resources */,
 				45B6B8A11CAD367A00882E79 /* house.jpg in Resources */,
@@ -953,20 +911,16 @@
 				45B6B8A81CAD367A00882E79 /* playVideo2.jpg in Resources */,
 				45B6B8C51CAD367A00882E79 /* ZFPlayerMaskView.xib in Resources */,
 				45B6B8971CAD367A00882E79 /* 114.png in Resources */,
-				45B6B8FD1CAD5E6200882E79 /* audio1.m4a in Resources */,
-				45B6B8991CAD367A00882E79 /* audio1.m4a in Resources */,
 				45B6B8F81CAD5E6200882E79 /* 114.png in Resources */,
 				45B6B8C71CAD367A00882E79 /* ZFPlayerView.xib in Resources */,
 				45B6B8E11CAD367A00882E79 /* chatUiResource.bundle in Resources */,
 				45B6B8A71CAD367A00882E79 /* playVideo1.jpg in Resources */,
-				45B6B89A1CAD367A00882E79 /* audio2.m4a in Resources */,
 				45B6B8F91CAD5E6200882E79 /* 150511_JiveBike.mov in Resources */,
 				45B6B9011CAD5E6200882E79 /* playVideo1.jpg in Resources */,
 				45B6B8981CAD367A00882E79 /* 150511_JiveBike.mov in Resources */,
 				45B6B8AA1CAD367A00882E79 /* 登录按钮背景@2x.png in Resources */,
 				45B6B8FB1CAD5E6200882E79 /* 登录按钮背景@2x.png in Resources */,
 				45B6B9001CAD5E6200882E79 /* Love Story.mp3 in Resources */,
-				45B6B8AB1CAD367A00882E79 /* 贝加尔湖畔.mp3 in Resources */,
 				45B6B9021CAD5E6200882E79 /* playVideo2.jpg in Resources */,
 				45B28DAF1CAD13830010C1ED /* Assets.xcassets in Resources */,
 				45B28DAD1CAD13830010C1ED /* Main.storyboard in Resources */,
@@ -1044,7 +998,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45B6B8C91CAD367A00882E79 /* BubblePhotoView.m in Sources */,
-				45B28DAA1CAD13830010C1ED /* ViewController.m in Sources */,
 				45B6B8E51CAD367A00882E79 /* EmotionFaceToolBar.m in Sources */,
 				45B6B8D91CAD367A00882E79 /* VideoPlayController.m in Sources */,
 				45B6B8AE1CAD367A00882E79 /* MessageModel.m in Sources */,
@@ -1083,7 +1036,6 @@
 				45B6B8E41CAD367A00882E79 /* EmotionBoardView.m in Sources */,
 				45B6B89E1CAD367A00882E79 /* CameraHelper.m in Sources */,
 				45B6B8DF1CAD367A00882E79 /* EmojiEmoticons.m in Sources */,
-				45B6B8D71CAD367A00882E79 /* ChatViewController.m in Sources */,
 				45B6B8BE1CAD367A00882E79 /* PhotoGalleryScrollView.m in Sources */,
 				45B6B8CD1CAD367A00882E79 /* BubbleVoiceView.m in Sources */,
 				45B6B8A91CAD367A00882E79 /* UpLoadFileHelper.m in Sources */,

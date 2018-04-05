@@ -2,7 +2,7 @@
 //  ChatTimeCell.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/22.
+//  Created by joy_yu on 16/3/22.
 
 //
 
@@ -18,23 +18,22 @@
 
 @implementation ChatTimeCell
 
-- (void)awakeFromNib {
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
 }
 
-
-
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        
-        
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])
+    {
         self.timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetWidth(self.frame)/2-80,5, 150, 20)];
 
         self.timeLabel.font = [UIFont systemFontOfSize:12];
@@ -45,8 +44,6 @@
         self.timeLabel.layer.cornerRadius = 10;
         [self addSubview:self.timeLabel];
     }
-    
-    
     return self;
 }
 

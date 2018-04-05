@@ -2,7 +2,7 @@
 //  SpringCollectionFlowLayout.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/25.
+//  Created by joy_yu on 16/3/25.
 
 //
 

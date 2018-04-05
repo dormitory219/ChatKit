@@ -2,7 +2,7 @@
 //  EmoijFaceToolBar.h
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/24.
+//  Created by joy_yu on 16/3/24.
 
 //
 
@@ -11,15 +11,12 @@
 
 @interface EmotionFaceToolBar : UIView
 
-
 /**
  *  @brief 表情中可能不是emoij，也可能是其他图片，就另外处理了
  */
 @property(nonatomic,assign) BOOL isEmoij;
 @property(nonatomic,copy) void(^switchEmoijBlock)(NSInteger);
 @property(nonatomic,copy) void(^sendEmoijBlock)();
-
-
 
 - (void)setBtnIndexSelect:(NSInteger)index;
 

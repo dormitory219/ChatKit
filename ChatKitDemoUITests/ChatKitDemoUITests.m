@@ -2,7 +2,7 @@
 //  ChatKitDemoUITests.m
 //  ChatKitDemoUITests
 //
-//  Created by 余强 on 16/3/31.
+//  Created by joy_yu on 16/3/31.
 
 //
 

@@ -2,7 +2,7 @@
 //  KeyBoardToolBarView.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/20.
+//  Created by joy_yu on 16/3/20.
 
 //
 
@@ -17,25 +17,17 @@
 
 @end
 
-
-
 @implementation KeyBoardToolBarView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    if (self) {
-        
-        
+    if (self)
+    {
         self.backgroundColor = [UIColor whiteColor];
-        
         [self setUpUi];
-        
         //最初设定的文本高度
         self.textHeight = KTextHeight;
-    
-        
-        
     }
     return self;
 }
@@ -51,12 +43,7 @@
     [self.switchBtn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
 
     self.switchBtn.tag = 0;
- 
 
-    
-
-    
-    
     //更多
     self.moreBtn = [[UIButton alloc]init];
     self.moreBtn.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
@@ -65,9 +52,6 @@
     [self.moreBtn setImage:[NSBundle imageWithBundle:@"chatUiResource" imageName:@"chatBar_keyboard@2x"] forState:UIControlStateSelected];
     [self.moreBtn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     self.moreBtn.tag = 2;
-    
-    
-    
     
     //表情
     self.emoijBtn = [[UIButton alloc] init];
@@ -79,8 +63,6 @@
     
     [self.emoijBtn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     self.emoijBtn.tag = 1;
-    
-
     
     // 文字输入框
     self.textView = [[MessageInputView  alloc] init];
@@ -97,10 +79,6 @@
     self.textView.font = [UIFont systemFontOfSize:14];
     self.textView.textInputDelegate = self;
     
-
-    
-    
-    
     //录音
     self.recordBtn = [[VoiceRecordBtn alloc] init];
   //  self.recordBtn.titleLabel.font = [UIFont systemFontOfSize:15.0];
@@ -114,95 +92,59 @@
     
     self.recordBtn.voiceRecoderDelegate = self;
 
-
-    
     [self addSubview:self.switchBtn];
     [self addSubview:self.moreBtn];
     [self addSubview:self.emoijBtn];
     [self addSubview:self.textView];
     [self addSubview:self.recordBtn];
     
-    
-    
     self.layer.borderColor = [[UIColor blackColor] colorWithAlphaComponent:0.1].CGColor;
     self.layer.borderWidth = 1;
-
-    
 }
-
-
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    
     self.switchBtn.frame = CGRectMake(kHorizontalPadding, self.height0-kVerticalPadding-KTextHeight, KTextHeight, KTextHeight);
-    
-    
- 
-    
     self.moreBtn.frame = CGRectMake(CGRectGetWidth(self.bounds)-kHorizontalPadding-KTextHeight, self.height0-kVerticalPadding-KTextHeight, KTextHeight, KTextHeight);
-    
     self.emoijBtn.frame = CGRectMake(CGRectGetMinX(self.moreBtn.frame)-kHorizontalPadding-KTextHeight, self.height0-kVerticalPadding-KTextHeight, KTextHeight, KTextHeight);
-    
-    
-    
     self.recordBtn.frame = CGRectMake(CGRectGetMaxX(self.switchBtn.frame)+kHorizontalPadding, self.height0-kVerticalPadding-KTextHeight, CGRectGetMinX(self.emoijBtn.frame)-CGRectGetMaxX(self.switchBtn.frame)-2*kHorizontalPadding, self.height0-2*kVerticalPadding);
-    
-    
     self.textView.frame = CGRectMake(CGRectGetMaxX(self.switchBtn.frame)+kHorizontalPadding, self.height0-kVerticalPadding-(self.textHeight), CGRectGetMinX(self.emoijBtn.frame)-CGRectGetMaxX(self.switchBtn.frame)-2*kHorizontalPadding, self.height0-2*kVerticalPadding);
-   
 }
-
-
-
 
 - (void)btnAction:(UIButton *)btn
 {
-    for (UIView *view in self.subviews) {
-        
-        if ([view isKindOfClass:[UIButton class]]) {
-            
-            
+    for (UIView *view in self.subviews)
+    {
+        if ([view isKindOfClass:[UIButton class]])
+        {
             UIButton *otherBtn = (UIButton *)view;
-            if (btn == otherBtn) {
+            if (btn == otherBtn)
+            {
                 continue;
             }
             otherBtn.selected = NO;
-        
         }
     }
-    
     NSInteger index = btn.tag;
     btn.selected ^= 1;
-    switch (index) {
-          
+    switch (index)
+    {
         case KeyBoardTypeVoiceRecoder:
-            
             [self setToolBarToNormalState];
-            
             break;
         case KeyBoardTypeEmoij:
-            
             break;
         case KeyBoardTypeMore:
-            
             break;
-            
         default:
             break;
     }
-    
     _selectBtnIndex = index;
-    
     self.recordBtn.hidden = !self.switchBtn.selected;
-   
     !btn.selected ? [self.textView becomeFirstResponder] :[self.textView resignFirstResponder];
-    
     //toolBar切换，回调外部键盘frame变化
     self.keyBoardFrameChange ? self.keyBoardFrameChange(index,!btn.selected):nil;
-    
-
 }
 
 
@@ -211,110 +153,80 @@
 #pragma mark -- text Send delegate
 - (void)sendTextMessage:(NSString *)text
 {
-    if (self.textInputDelegate && [self.textInputDelegate respondsToSelector:@selector(sendTextMessage:)]) {
-        
+    if (self.textInputDelegate && [self.textInputDelegate respondsToSelector:@selector(sendTextMessage:)])
+    {
         [self.textInputDelegate sendTextMessage:text];
     }
 }
 
-
-
-
 #pragma mark --- textViewDelegate
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
-    
-    
     if ([text isEqualToString:@"\n"])
     {
-       
-      
-        if (self.textView.textInputDelegate && [self.textView.textInputDelegate respondsToSelector:@selector(sendTextMessage:)]) {
-            
+        if (self.textView.textInputDelegate && [self.textView.textInputDelegate respondsToSelector:@selector(sendTextMessage:)])
+        {
             [self.textView.textInputDelegate sendTextMessage:textView.text];
- 
         }
-        
         [self setToolBarToNormalState];
-        
         return NO;
     }
-    
     return YES;
 }
 
-
 - (void)textViewDidBeginEditing:(UITextView *)textView
 {
-    
     self.textHeight = [self getTextViewHeight:textView];
     [self updateFrame:self.textHeight];
-    
-    
-    
-     self.keyBoardFrameChange ? self.keyBoardFrameChange(KeyBoardTypeSystem,YES):nil;
+    self.keyBoardFrameChange ? self.keyBoardFrameChange(KeyBoardTypeSystem,YES):nil;
 }
-
 
 - (void)textViewDidChange:(UITextView *)textView
 {
     self.textHeight = [self getTextViewHeight:textView];
-    
-  
-    if (self.textHeight> KMaxInputViewHeight) {
-        
+    if (self.textHeight> KMaxInputViewHeight)
+    {
         [self.textView scrollRangeToVisible:NSMakeRange(self.textView.text.length-1, 1)];
-    
         return;
     }
-    
-  
     [self updateFrame:self.textHeight];
- 
-    
-    if (self.textHeight>KTextHeight) {
+    if (self.textHeight>KTextHeight)
+    {
         [[NSNotificationCenter defaultCenter]postNotificationName:KTextViewHeightChangeNotification object:@(self.textHeight-KTextHeight)];
     }
-   
 }
-
-
 
 - (CGFloat)getTextViewHeight:(UITextView *)textView
 {
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0)
     {
         return ceilf([textView sizeThatFits:textView.frame.size].height);
-    } else {
+    }
+    else
+    {
         return textView.contentSize.height;
     }
 }
-
-
-
-
 
 //只改变了toolBar的高度，键盘其实高度未变（假象一个）
 - (void)updateFrame:(CGFloat)textHeight
 {
     self.textHeight = textHeight;
-
-    
     //一行高度：默认高度
-    if (self.textHeight <  KTextHeight) {
+    if (self.textHeight <  KTextHeight)
+    {
         self.top0 = 0;
         self.height0 = KeyToolBarHeight;
-    }else{
+    }
+    else
+    {
         //多行高度，通过行高度变化增量，改变toolBar的顶点坐标以及高度
         //顶部坐标增量
         self.top0 = KTextHeight -self.textHeight;
-        
         //键盘增量
         self.height0 = KeyToolBarHeight+ (textHeight -KTextHeight);
     }
 }
-
-
 
 /**
  *  @brief 将toolBar设置成44的默认高度状态
@@ -330,7 +242,6 @@
     self.height0 = KeyToolBarHeight;
 }
 
-
 #pragma mark -- voice recoder delegate
 - (void)setPeakPower:(float)peakPower
 {
@@ -338,18 +249,18 @@
     self.recordBtn.peakPower = peakPower;
 }
 
-
-
 - (void)prepareRecordingVoiceAction
 {
-    if (_voiceRecoderDelegate && [_voiceRecoderDelegate respondsToSelector:@selector(prepareRecordingVoiceAction)]) {
+    if (_voiceRecoderDelegate && [_voiceRecoderDelegate respondsToSelector:@selector(prepareRecordingVoiceAction)])
+    {
         [self.voiceRecoderDelegate prepareRecordingVoiceAction];
     }
 }
 
 - (void)didStartRecordingVoiceAction
 {
-    if (_voiceRecoderDelegate && [_voiceRecoderDelegate respondsToSelector:@selector(didStartRecordingVoiceAction)]) {
+    if (_voiceRecoderDelegate && [_voiceRecoderDelegate respondsToSelector:@selector(didStartRecordingVoiceAction)])
+    {
         [_voiceRecoderDelegate didStartRecordingVoiceAction];
     }
 }
@@ -370,11 +281,8 @@
     }
 }
 
-
-
 - (void)didDragOutsideAction
 {
-    
     if ([_voiceRecoderDelegate respondsToSelector:@selector(didDragOutsideAction)])
     {
         [_voiceRecoderDelegate didDragOutsideAction];
@@ -383,13 +291,10 @@
 
 - (void)didDragInsideAction
 {
-    
     if ([_voiceRecoderDelegate respondsToSelector:@selector(didDragInsideAction)])
     {
         [_voiceRecoderDelegate didDragInsideAction];
     }
 }
-
-
 
 @end

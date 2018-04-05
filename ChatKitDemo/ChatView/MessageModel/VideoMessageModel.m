@@ -2,7 +2,7 @@
 //  VideoMessageModel.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/22.
+//  Created by joy_yu on 16/3/22.
 
 //
 
@@ -10,7 +10,6 @@
 #import "VideoMessageModel.h"
 
 @implementation VideoMessageModel
-
 
 + (instancetype)VideoThumbPhoto:(NSString *)videoThumbPhoto
                           videoThumbUrl:(NSString *)videoThumbUrl
@@ -36,11 +35,8 @@
         self.videoThumbPhoto = videoThumbPhoto;
         self.videoThumbUrl = videoThumbUrl;
         self.videoUrl = videoUrl;
-        
-        
         self.username = username;
         self.timeStamp = timeStamp;
-        
         self.bubbleMessageBodyType = MessageBodyTypeVideo;
         self.isSender = isSender;
     }

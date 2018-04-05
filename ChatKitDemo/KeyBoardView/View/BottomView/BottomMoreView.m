@@ -2,7 +2,7 @@
 //  BottomMoreView.m
 //  KeyBoardView
 //
-//  Created by 余强 on 16/3/20.
+//  Created by joy_yu on 16/3/20.
 
 //
 
@@ -21,7 +21,6 @@
 @end
 
 @implementation BottomMoreView
-
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -49,7 +48,6 @@
                                   @"chatBar_colorMore_camera@2x",
                                   @"chatBar_colorMore_audioCall@2x",
                                   @"chatBar_colorMore_videoCall@2x",
-                                
                                   ];
     NSArray *hightImageArray = @[
                                  @"chatBar_colorMore_photoSelected@2x",
@@ -57,21 +55,14 @@
                                  @"chatBar_colorMore_cameraSelected@2x",
                                  @"chatBar_colorMore_audioCallSelected@2x",
                                  @"chatBar_colorMore_videoCallSelected@2x",
-                                 
-                                 
                                   ];
-    
     NSArray *titleArray = @[
                             @"照片",
                             @"位置",
                             @"拍照",
                             @"语音电话",
                             @"视频通话",
- 
                             ];
-    
-    
-    
     self.scrollview = [[UIScrollView alloc]initWithFrame:self.bounds];
     self.scrollview.contentSize = CGSizeMake(self.bounds.size.width*2, 0);
     self.scrollview.showsHorizontalScrollIndicator = NO;
@@ -79,12 +70,10 @@
     self.scrollview.pagingEnabled = YES;
     [self addSubview:self.scrollview];
     
-    
-    
     CGFloat width = (self.width0 - KMargin*(KColumNum+1))/KColumNum;
     CGFloat height = 85;
-    for (int i = 0; i<titleArray.count; i++) {
-        
+    for (int i = 0; i<titleArray.count; i++)
+    {
         MoreViewBtn *btn = [[MoreViewBtn alloc]init];
                            // WithFrame:CGRectMake(KMargin+(i%KColumNum)*(width+KMargin), KMargin+(i/KColumNum)*(height+KMargin/2), width,height)];
         NSInteger page = i/(KRowNum*KColumNum);
@@ -99,35 +88,18 @@
         
     }
     
-
-  
-    
-    
     self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(self.width0/2, self.height0-15, 10, 10)];
     self.pageControl.numberOfPages = self.scrollview.contentSize.width/self.width0;
     self.pageControl.currentPageIndicatorTintColor = [UIColor grayColor];
     self.pageControl.pageIndicatorTintColor = [[UIColor lightGrayColor]colorWithAlphaComponent:0.6];
     [self addSubview:self.pageControl];
-    
-    
-    
-    
-    
-    
 }
-
-
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    
     NSInteger page = scrollView.contentOffset.x/self.width0;
     self.pageControl.currentPage = page;
 }
-
-
-
-
 
 /**
  *  @brief 格式布局
@@ -162,45 +134,29 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    
-    
     NSArray *titleArray = @[
                             @"照片",
                             @"位置",
                             @"拍照",
                             @"语音电话",
                             @"视频通话",
-                            
                             ];
-    
     CGFloat width = (self.width0 - KMargin*(KColumNum+1))/KColumNum;
     CGFloat height = 85;
-    for (int i = 0; i<titleArray.count; i++) {
-        
+    for (int i = 0; i<titleArray.count; i++)
+    {
         MoreViewBtn *btn = self.scrollview.subviews[i];
-
         NSInteger page = i/(KRowNum*KColumNum);
         btn.frame = [self getFrameWithColumesOfPerRow:KColumNum rowsOfPerColumn:KRowNum itemWidth:width itemHeight:height marginX:KMargin maginY:KMargin atIndex:i atPage:page scrollView:self.scrollview];
-        
     }
-    
-    
     self.pageControl.frame = CGRectMake(self.width0/2, self.height0-15, 10, 10);
-
-    
 }
-
 
 - (void)btnClickAction:(UIButton *)btn
 {
-    
-    if (_moreViewDelegate && [_moreViewDelegate respondsToSelector:@selector(moreViewClick:)]) {
-     
+    if (_moreViewDelegate && [_moreViewDelegate respondsToSelector:@selector(moreViewClick:)])
+    {
         [_moreViewDelegate moreViewClick:(MoreViewType)btn.tag];
     }
-
 }
-
-
-
 @end
