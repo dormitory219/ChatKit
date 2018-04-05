@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A2B258BB1E55372CD1EAC9D5'
-               BlueprintName = 'XXNibBridge'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libXXNibBridge.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C4E1BAAE137FAFC6ADF977B8CC751FA7"
+               BlueprintName = "XXNibBridge"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libXXNibBridge.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
